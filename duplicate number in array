@@ -1,0 +1,42 @@
+1)	Write a program to find the duplicate numbers on the Integer array in Java?   (3+2)
+2)	Write a program to find the largest and smallest numbers in an unsorted array? (3+2)
+Answer1:
+public class Main
+{
+	public static void main(String[] args) {
+		int arr [] ={2,1,4,8,5,6,7,8,2};
+		for(int i=0;i<arr.length-1;i++)
+		{
+		    for(int j=i+1;j<arr.length;j++)
+		    {
+		        if(arr[i]==arr[j])
+		        System.out.println(arr[j]);
+		        
+		    }
+		}
+	}
+}
+
+Answer2:
+public class Main
+{
+  public static void main (String[]args)
+  {
+    int arr[] = { 2, 1, 4, 8, 5, 6, 7, 8, 2 };
+    int max = arr[0];
+    int min=arr[0];
+
+    for (int i = 0; i < arr.length - 1; i++)
+      {
+
+
+	if (arr[i]>max)	  max = arr[i];
+    if(arr[i]<min) min=arr[i];
+	 
+	
+      }
+      System.out.println("Maximum"+max);
+      System.out.println("Minimum"+min);
+
+  }
+}
